@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.section_header{
+    padding: 3vmin 0;
+}
+.section_header .right li{
+   margin: 0 6vmin;
+   font-size: 3vmin;
+   
+}
+.section_header,.section_content{
+    background-color: rgb(202, 202, 202);
+}
+.section_content .arrow{
+    font-size: 9vmin;
+    margin-top: -5vmin;
+}
+.section_content .col-md-3, .col-md-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section_content .col-md-8{
+    border: 1px solid rgb(252, 61, 61);
+    position: relative;
+    display: flex;
+}
+.section_content .col-md-8 .left{
+    width: 50%;
+    border: 1px solid #000;
+    display: flex;
+
+}
+.section_content .col-md-8 .right_wrap{
+   
+}
+.section_content .col-md-8 .right{
+    width: 100%;
+    border: 1px solid rgb(10, 255, 83);
+    height: 40vh;
+    background-position: center center;
+    background-size: cover;
+    filter: grayscale(100%);
+    transition: .4s
+}
+.section_content .col-md-8 .right:hover{
+    box-shadow: 5px 5px 10px #333;
+    margin-top: -1.5vmin;
+    filter: grayscale(20%)
+    
+
+}
+/* .section_content .col-md-8 .left .pic{
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+
+    background-position: center center;
+    background-size: cover;
+    right: 0
+} */
+.section_content .col-md-8 .left ul li{
+    margin: 4vmin 0;
+    font-size: 3vmin;
+}
+.section_content .col-md-8 .left ul{
+    margin-left: 10vmin;
+}
+.section_content .col-md-8 .left .big_circle{
+   width: 15vmin;
+   height: 15vmin;
+   border-radius: 100%;
+   position: absolute;
+   border: 1px solid #000;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   left: 10%;
+   bottom: -30vmin;
+   transform: translatex(-50%)
+
+}
+.section_content .col-md-8 .left .left_ul li{
+    position: relative;
+}
+.section_content .col-md-8 .left .left_ul li::after{
+    display: block;
+    content: "";
+    width: 2.6vmin;
+    height: 2.6vmin;
+    background-color: rgb(22, 22, 22);
+    position: absolute;
+    border-radius: 100%;
+    left: -4vmin;
+    top: -50%
+    
+
+}
+
+.section_content .col-md-8 .left{
+    position: relative;
+}
+.section_content .col-md-4 ul li{
+    margin-top: 4vmin;
+    padding: 1.3vmin 0;
+    letter-spacing: 1vmin;
+    border-bottom: 1px solid rgb(43, 43, 43);
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
