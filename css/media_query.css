@@ -1,0 +1,121 @@
+@media screen and (max-width: 1100px){
+
+    #gotop_mobile{
+        display: flex;
+    }
+    #gotop{
+       display: none;
+    }
+}
+@media screen and (max-width: 450px){
+   
+    .slide {
+    width: 100% !important;
+}
+@media screen and (max-width: 800px){
+    #gotop{
+        display: none !important;
+    }
+    .section_footer{
+        padding: 3vmin .5vmin;
+    }
+}
+@media screen and (max-width: 568px){
+    .section_footer ul{
+  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+        box-shadow: 2px 2px 8px #000;
+    }
+
+    .section_footer ul li{
+        letter-spacing: 1vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(70, 70, 70);
+        padding: 1.4vmin 0;
+    }
+    .footer_li_title{
+        font-size: 3vmin;
+        letter-spacing: .3vmin;
+    }
+}
+@media screen and (max-width: 1500px){
+    section.section_product .item .img{
+        background-position: top top;
+        height: 20vmin;
+    }
+    section.section_product .item{
+        padding: 1vmin 1.4vmin;
+        height: 20vmin;
+    }
+}
+@media screen and (max-width: 1000px){
+    section.section_product .item_wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    section.section_product .item_wrap .item{
+       display: flex;
+       width: 100%;
+       margin: 5vmin 0;
+       height: auto;
+       align-items: center;
+    }
+    
+    section.section_product .item_wrap .item .img,
+    section.section_product .item_wrap .item .txt
+    {
+        width: 50%;
+        padding: 0 1.5vmin;
+        
+     }
+     section.section_product .item_wrap .item:hover .img{
+         transform: scale(1);
+     }
+}
+@media screen and (max-width: 600px){
+    section.section_product #gif_img{
+        width: 45%;
+    }
+    section.section_product .item_wrap .item{
+        display: flex;
+        width: 100%;
+        margin: 5vmin 0;
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+     }
+     section.section_product .item_wrap .item .img,
+    section.section_product .item_wrap .item .txt
+    {
+        width: 100%;
+        padding: 0 1.5vmin;
+        
+     }
+     section.section_product .item_wrap .item .img{
+         height: 50vmin;
+     }
+}
+@media screen and (max-width: 1500px){
+    .bg_img{
+        height: 25vmin;
+    }
+}
+@media screen and (max-width: 500px){
+    .bg_img{
+        height: 50vmin;
+
+    }
+    section.section_info .three_part .item{
+        border-right: none;
+
+     
+    }
+}
