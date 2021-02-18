@@ -10,6 +10,11 @@ html {
     height: 100%
 }
 
+.slick-next::before,
+.slick-prev::before {
+    display: none;
+}
+
 #bg_img {
     position: fixed;
     left: 0;
@@ -34,6 +39,15 @@ html {
     height: 50vmin
 }
 
+#img04 {
+    width: 35vmin;
+    position: absolute;
+    z-index: ;
+    top: 80%;
+    right: 10vmin;
+    opacity: 0.5;
+}
+
 #img01 {
     position: absolute;
     top: 50%;
@@ -53,7 +67,6 @@ section {
 
 #gotop {
     width: 100%;
-    background-color: rgba(26, 26, 26, .5);
     position: fixed;
     z-index: 99999999999999;
     display: flex;
@@ -61,10 +74,6 @@ section {
     padding: 1.3vmin 0;
     align-items: center;
     transition: .5s
-}
-
-#gotop:hover {
-    background-color: #1c1e1f
 }
 
 #gotop .top {
@@ -361,7 +370,6 @@ section {
 }
 
 section.section_product {
-    border: 1px solid #f15656;
     height: auto;
     margin-top: 20vmin
 }
@@ -383,11 +391,12 @@ section.section_product .item {
     background-color: rgba(240, 236, 233, .7);
     overflow: hidden;
     padding: 8vmin 2.5vmin;
-    z-index: 99999
+    z-index: 99999;
+    transition: .5s
 }
 
 section.section_product .item:hover {
-    height: auto
+    height: 80vmin
 }
 
 section.section_product .item .img {
@@ -435,7 +444,7 @@ section.section_info .col-md-6 .info_content_txt {
 }
 
 section.section_info .three_part .item {
-    border-right: solid 1px #333;
+    border-right: solid 1px rgb(235, 235, 235);
     display: flex;
     padding: 2vmin 2.8vmin;
     justify-content: center;
@@ -446,6 +455,10 @@ section.section_info .three_part .item {
 section.section_info .slick_item {
     width: 60%;
     margin: 0 2vmin
+}
+
+section.section_info h2 {
+    color: rgb(216, 212, 207)
 }
 
 section.section_info .slick_item img {
@@ -469,16 +482,6 @@ section.section_info #img03 {
 
 #description {
     position: relative
-}
-
-#description::after {
-    position: absolute;
-    content: '';
-    display: block;
-    width: 5vmin;
-    height: 5vmin;
-    border-radius: 100%;
-    background-color: #fff
 }
 
 section.section_another .slick_item {
@@ -534,6 +537,10 @@ section.section_another .bg_img {
         }
     }
     @media screen and (max-width:568px) {
+        section.section_another .slick_item {
+            height: 42vmin;
+            width: 100%;
+        }
         .section_footer ul {
             display: flex;
             justify-content: center;
